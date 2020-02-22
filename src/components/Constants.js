@@ -1,0 +1,9 @@
+export const NAMES_OBJECT = {
+    FIRST_USER: 'John Smith',
+    SECOND_USER: 'John Doe'
+};
+
+export const GET_SECOND_USER = {
+    [NAMES_OBJECT.FIRST_USER]: NAMES_OBJECT.SECOND_USER,
+    [NAMES_OBJECT.SECOND_USER]: NAMES_OBJECT.FIRST_USER
+};
