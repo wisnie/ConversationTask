@@ -16,6 +16,7 @@ export default class DialogForm extends React.Component {
             messages.push({ value: this.state.value, author: this.props.activeAccount });
             localStorage.setItem('messages', JSON.stringify(messages));
             this.props.onSendingMessage();
+            this.setState({ value: '' });
         }
     };
 
